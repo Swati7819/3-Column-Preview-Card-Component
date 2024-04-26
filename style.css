@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    /* min-height: 100vh;
+    display: flex;
+    align-items: center; */
+    box-sizing: border-box;
+    padding: 0;
+
+
+}
+
+main {
+    min-height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card-container {
+    color: white;
+    margin: 1.5rem;
+    display: flex;
+    background-color: darkblue;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 910px;
+    /* margin:auto;
+    margin-inline:auto - doesnnt allow to set margin */
+
+}
+
+
+
+a {
+    color: inherit;
+    /*color inherit from parents*/
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+.card {
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /*or we can give flex-basis:100%*/
+}
+
+.card img {
+    width: 64px;
+    height: 40px;
+}
+
+.card h2 {
+    text-transform: uppercase;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.25rem;
+}
+
+.card p {
+    opacity: 0.7;
+    line-height: 2;
+    margin-bottom: 2.5rem;
+
+}
+
+.card a {
+    margin-top: 3rem;
+    /* border: 2px solid white; */
+    padding: 1em 2em;
+    border-radius: 2em;
+    align-self: flex-start;
+    /* margin-right: auto; work same as align self:flex-start*/
+    background-color: white;
+
+
+}
+
+.card p,
+a {
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+
+}
+
+.orange-card {
+    background-color: #e28525;
+    /* border-radius: 10px 10px 0px 0px; */
+
+}
+
+.orange-card a {
+    color: #e28525;
+    border: 2px solid transparent;
+}
+
+.orange-card a:hover {
+    color: white;
+    background-color: #e28525;
+    border: 2px solid white;
+}
+
+
+.cyan-card {
+    background-color: #016972;
+}
+
+.cyan-card a {
+    color: #016972;
+    border: 2px solid transparent;
+}
+
+.cyan-card a:hover {
+    color: white;
+    background-color: #016972;
+    border: 2px solid white;
+}
+
+.green-card {
+    background-color: #00403f;
+    /* border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px; shorthand*/
+    /* border-radius: 0px 0px 10px 10px; */
+
+}
+
+.green-card a {
+    color: #00403f;
+    border: 2px solid transparent;
+}
+
+.green-card a:hover {
+    color: white;
+    background-color: #00403f;
+    border: 2px solid white;
+}
+
+@media screen and (max-width:850px) {
+
+    .card-container {
+        flex-direction: column;
+        max-width: 500px;
+    }
+
+    .card {
+        width: auto;
+        /*unset will work the same*/
+    }
+
+
+}
